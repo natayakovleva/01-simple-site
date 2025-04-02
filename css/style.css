@@ -145,7 +145,7 @@ body {
 }
 
 .about {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -201,4 +201,60 @@ body {
 
 .about__btn {
   padding: 21px 120px;
+}
+
+.accordeon {
+
+}
+
+.accordeon__inner {
+  padding-left: 200px;
+}
+
+.accordeon__item {
+  border-bottom: 1px solid #000;
+  padding: 50px 101px 20px 0;
+  position: relative;
+}
+
+.accordeon__item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  background-image: url(../image/arrow-down.svg);
+  right: 85px;
+  top: 50px;
+}
+
+.accordeon__item:last-child::before {
+  content: '';
+  position: absolute;
+  background-image: url(../image/accordeon-img.jpg);
+}
+
+.accordeon__triger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordeon__triger-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  flex-basis: 300px;
+
+}
+
+.accordeon__triger-text {
+  padding-right: 104px;
+  flex-basis: 387px;
+}
+
+.accordeon__content {
+  display: none;
+  padding-top: 20px;
+}
+
+.accordeon__content p {
+  margin-bottom: 10px;
 }
