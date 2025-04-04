@@ -188,7 +188,7 @@ body {
 }
 
 .about__slider {
-  width: 1600px;
+  width: 1800px;
   padding-left: 200px;
   margin-left: -200px;
   padding-bottom: 20px;
@@ -213,7 +213,7 @@ body {
 
 .accordeon__item {
   border-bottom: 1px solid #000;
-  padding: 50px 101px 20px 0;
+  padding: 0 101px 0 0;
   position: relative;
 }
 
@@ -231,23 +231,30 @@ body {
   content: '';
   position: absolute;
   background-image: url(../image/accordeon-img.jpg);
+  width: 65px;
+  height: 120px;
+  bottom: -73px;
+  left: 268px;
 }
 
 .accordeon__triger {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+  padding-top: 50px;
 }
 
 .accordeon__triger-title {
   text-transform: uppercase;
   font-size: 24px;
   flex-basis: 300px;
-
+  padding-bottom: 42px;
 }
 
 .accordeon__triger-text {
   padding-right: 104px;
   flex-basis: 387px;
+  padding-bottom: 20px;
 }
 
 .accordeon__content {
@@ -255,6 +262,11 @@ body {
   padding-top: 20px;
 }
 
+.accordeon__item--active .accordeon__content {
+  display: block;
+}
+
 .accordeon__content p {
   margin-bottom: 10px;
 }
+
